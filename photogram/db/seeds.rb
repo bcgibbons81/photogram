@@ -33,7 +33,7 @@ ActiveRecord::Base.transaction do
 	50.times do 
 		post['caption'] = Faker::Hipster.sentence(1).gsub(".", "")
 		post['user_id'] = user_ids.sample
-		post['image'] = Faker::LoremPixel.image
+		#post['image'] = Faker::LoremPixel.image
 		
 		Post.create!(post)
 	end
